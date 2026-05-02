@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.search-box {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 12px;
+  width: 230px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  margin-left: 10px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.12);
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  color: white !important;
+}
+
+.weather-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto;
+}
+/* Default background */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+/* Clear (sunny) */
+.clear {
+  background: linear-gradient(to top, #4facfe, #00f2fe);
+}
+
+/* Clouds */
+.clouds {
+  background: linear-gradient(to top, #bdc3c7, #2c3e50);
+}
+
+/* Rain */
+.rain {
+  background: linear-gradient(to top, #373b44, #4286f4);
+}
+
+/* Mist / Fog */
+.mist {
+  background: linear-gradient(to top, #757f9a, #d7dde8);
+}
+
+/* Snow */
+.snow {
+  background: linear-gradient(to top, #e6dada, #274046);
+}
