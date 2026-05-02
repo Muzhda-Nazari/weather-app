@@ -40,7 +40,7 @@ function App() {
   };
 
   return (
-    <div className="container">
+   <div className={`container ${weather ? weather.weather[0].main.toLowerCase() : ""}`}>
       <h1>Weather App 🌤️</h1>
 
       <div className="search-box">
